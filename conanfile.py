@@ -4,12 +4,12 @@ import os
 class CNatsConan(ConanFile):
     name = "cnats"
     version = "1.8.0"
-    author = "Ralph-Gordon Paul (gordon@rgpaul.com)"
+    author = "Ralph-Gordon Paul (g.paul@appcom-interactive.de)"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False], "android_ndk": "ANY", "android_stl_type":["c++_static", "c++_shared"]}
     default_options = "shared=False", "android_ndk=None", "android_stl_type=c++_static"
     description = "A C-Client Library for NATS"
-    url = "https://github.com/Manromen/conan-cnats-scripts"
+    url = "https://github.com/appcom-interactive/conan-cnats-scripts"
     license = "Apache-2.0"
     exports_sources = "cmake-modules/*"
     generators = "cmake_paths"
